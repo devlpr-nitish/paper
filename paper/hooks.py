@@ -1,7 +1,7 @@
 app_name = "paper"
 app_title = "Paper"
 app_publisher = "Nitish"
-app_description = "Paper — A Notion-like knowledge management and documentation platform for Frappe."
+app_description = "Paper — A knowledge management and documentation platform for Frappe."
 app_email = "devlprnitish@gmail.com"
 app_license = "mit"
 
@@ -256,3 +256,10 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+
+# Proxy Next.js through Frappe — routes /paper and /_next to Next.js
+page_renderer = ["paper.proxy.NextJSProxyRenderer"]
+
+# Next.js lifecycle — auto-configure on install / migrate / build
+after_install = "paper.setup.after_install"
+after_migrate = "paper.setup.after_migrate"
