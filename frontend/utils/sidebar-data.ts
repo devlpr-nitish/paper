@@ -35,6 +35,24 @@ export const PRIVATE_PAGES: Page[] = [
     { id: "p3", title: "Personal Notes", icon: "📓", type: "page" },
 ];
 
+export const RECENT_PAGES: Page[] = [
+    { id: "rc1", title: "Q2 Planning", icon: "📊", type: "page" },
+    { id: "rc2", title: "API Spec v2", icon: "🔌", type: "page" },
+    { id: "rc3", title: "Onboarding Flow", icon: "🧭", type: "page" },
+];
+
+export const SHARED_PAGES: Page[] = [
+    { id: "sh1", title: "Team Handbook", icon: "📖", type: "page" },
+    { id: "sh2", title: "Design System", icon: "🎨", type: "page" },
+    { id: "sh3", title: "Sprint Board", icon: "🏃", type: "page" },
+];
+
+export const TRASH_PAGES: Page[] = [
+    { id: "tr1", title: "Old Roadmap Draft", icon: "🗺️", type: "page" },
+    { id: "tr2", title: "Archived Notes", icon: "📓", type: "page" },
+    { id: "tr3", title: "Deprecated API Spec", icon: "🔌", type: "page" },
+];
+
 export const WORKSPACE: Workspace = {
     name: "My Workspace",
     initial: "M",

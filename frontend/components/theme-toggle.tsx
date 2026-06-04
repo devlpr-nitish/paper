@@ -35,7 +35,7 @@ export function ThemeToggle() {
         <button
             onClick={toggle}
             title={resolvedTheme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
-            className="w-7 h-7 flex items-center justify-center rounded-md text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+            className="cursor-pointer w-7 h-7 flex items-center justify-center rounded-md text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
         >
             {resolvedTheme === "dark"
                 ? <Sun size={14} />

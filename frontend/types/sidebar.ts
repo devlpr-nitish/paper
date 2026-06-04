@@ -60,4 +60,5 @@ export type PageItemProps = {
 export type NavIconButtonProps = {
     icon: React.ReactNode;
     label: string;
+    onClick?: () => void;
 };
