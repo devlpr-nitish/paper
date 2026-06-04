@@ -25,14 +25,14 @@ export const SidebarSection = ({ label, icon, pages }: SidebarSectionProps) => {
                 </span>
                 <div className="invisible group-hover/section:visible flex items-center gap-0.5">
                     <button
-                        className="w-5 h-5 flex items-center justify-center rounded hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-400 dark:text-zinc-500"
+                        className="cursor-pointer w-5 h-5 flex items-center justify-center rounded hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-400 dark:text-zinc-500"
                         title="New page"
                         onClick={() => setCreating({ type: "page" })}
                     >
                         <FilePlus size={12} />
                     </button>
                     <button
-                        className="w-5 h-5 flex items-center justify-center rounded hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-400 dark:text-zinc-500"
+                        className="cursor-pointer w-5 h-5 flex items-center justify-center rounded hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-400 dark:text-zinc-500"
                         title="New folder"
                         onClick={() => setCreating({ type: "folder" })}
                     >

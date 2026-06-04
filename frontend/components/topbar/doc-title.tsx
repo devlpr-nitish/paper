@@ -46,7 +46,7 @@ export const DocTitle = ({ title, onRename }: DocTitleProps) => {
             ) : (
                 <button
                     onClick={() => { setDraft(title); setEditing(true); }}
-                    className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-zinc-100 truncate max-w-xs"
+                    className="cursor-pointer text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-zinc-100 truncate max-w-xs"
                     title="Click to rename"
                 >
                     {title}

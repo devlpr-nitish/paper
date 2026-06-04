@@ -30,7 +30,7 @@ export const PageItem = ({ page, depth = 0 }: PageItemProps) => {
                 style={{ paddingLeft: `${8 + depth * 12}px`, paddingRight: "6px" }}
             >
                 <button
-                    className="flex-shrink-0 w-4 h-4 flex items-center justify-center text-zinc-400 dark:text-zinc-500 rounded hover:bg-zinc-200 dark:hover:bg-zinc-700"
+                    className="cursor-pointer flex-shrink-0 w-4 h-4 flex items-center justify-center text-zinc-400 dark:text-zinc-500 rounded hover:bg-zinc-200 dark:hover:bg-zinc-700"
                     onClick={(e) => {
                         e.stopPropagation();
                         if (hasChildren) setExpanded((v) => !v);
@@ -53,7 +53,7 @@ export const PageItem = ({ page, depth = 0 }: PageItemProps) => {
 
                 <div className="invisible group-hover/page:visible flex items-center gap-0.5">
                     <button
-                        className="w-5 h-5 flex items-center justify-center rounded hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-400 dark:text-zinc-500"
+                        className="cursor-pointer w-5 h-5 flex items-center justify-center rounded hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-400 dark:text-zinc-500"
                         title="New page inside"
                         onClick={(e) => { e.stopPropagation(); startCreate("page"); }}
                     >

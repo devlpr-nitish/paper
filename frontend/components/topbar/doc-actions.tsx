@@ -57,7 +57,7 @@ export const DocActions = ({
             {/* Access dropdown */}
             <DropdownMenu.Root>
                 <DropdownMenu.Trigger asChild>
-                    <button className="flex items-center gap-1.5 px-2 py-1 rounded-md text-xs text-zinc-600 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 border border-zinc-200 dark:border-zinc-700">
+                    <button className="cursor-pointer flex items-center gap-1.5 px-2 py-1 rounded-md text-xs text-zinc-600 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 border border-zinc-200 dark:border-zinc-700">
                         {current.icon}
                         <span>{current.label}</span>
                     </button>
@@ -90,7 +90,7 @@ export const DocActions = ({
             <button
                 onClick={onToggleFavorite}
                 title={isFavorite ? "Remove from favorites" : "Add to favorites"}
-                className="w-7 h-7 flex items-center justify-center rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-800"
+                className="cursor-pointer w-7 h-7 flex items-center justify-center rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-800"
             >
                 <Star
                     size={15}
@@ -103,7 +103,7 @@ export const DocActions = ({
             {/* Share */}
             <button
                 onClick={onShare}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 hover:bg-zinc-700 dark:hover:bg-zinc-300"
+                className="cursor-pointer flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 hover:bg-zinc-700 dark:hover:bg-zinc-300"
             >
                 <UserPlus size={13} />
                 Share
@@ -112,7 +112,7 @@ export const DocActions = ({
             {/* Three-dot */}
             <DropdownMenu.Root>
                 <DropdownMenu.Trigger asChild>
-                    <button className="w-7 h-7 flex items-center justify-center rounded-md text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800">
+                    <button className="cursor-pointer w-7 h-7 flex items-center justify-center rounded-md text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800">
                         <MoreHorizontal size={15} />
                     </button>
                 </DropdownMenu.Trigger>
