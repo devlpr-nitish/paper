@@ -13,7 +13,7 @@ export const Topbar = ({ sidebarOpen, onShowSidebar }: TopbarProps) => {
     const [access, setAccess] = useState<AccessLevel>("private");
 
     return (
-        <header className="flex items-center justify-between h-12 px-4 border-b border-zinc-100 dark:border-zinc-900 bg-white dark:bg-zinc-950 flex-shrink-0">
+        <header className="flex items-center justify-between h-12 px-4 border-b border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 flex-shrink-0">
             <div className="flex items-center gap-1">
                 {!sidebarOpen && (
                     <button
