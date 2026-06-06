@@ -61,4 +61,6 @@ export type NavIconButtonProps = {
     icon: React.ReactNode;
     label: string;
     onClick?: () => void;
+    active?: boolean;
+    badge?: number;
 };

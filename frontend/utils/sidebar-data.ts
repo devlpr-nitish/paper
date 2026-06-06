@@ -1,4 +1,4 @@
-import { Home, Inbox, Settings } from "lucide-react";
+import { Home, Inbox } from "lucide-react";
 import type { NavItem, Page, Workspace } from "@/types/sidebar";
 
 export const NAV_ITEMS: NavItem[] = [
@@ -57,3 +57,23 @@ export const WORKSPACE: Workspace = {
     name: "My Workspace",
     initial: "M",
 };
+
+export type NotifType = "mention" | "comment" | "update" | "invite";
+
+export type Notification = {
+    id: string;
+    type: NotifType;
+    user: string;
+    page: string;
+    time: string;
+    read: boolean;
+    preview: string;
+};
+
+export const NOTIFICATIONS: Notification[] = [
+    { id: "n1", type: "mention",  user: "Alex Chen",    page: "Q2 Planning",     time: "2m ago",    read: false, preview: "Hey @you, can you review this section?" },
+    { id: "n2", type: "comment",  user: "Sarah Park",   page: "API Spec v2",     time: "1h ago",    read: false, preview: "Left a comment on the authentication flow" },
+    { id: "n3", type: "update",   user: "Mike Johnson", page: "Product Roadmap", time: "3h ago",    read: false, preview: "Updated the Q3 objectives section" },
+    { id: "n4", type: "mention",  user: "Emma Wilson",  page: "Team Handbook",   time: "Yesterday", read: true,  preview: "Can you add the onboarding steps here?" },
+    { id: "n5", type: "invite",   user: "David Kim",    page: "Design System",   time: "2d ago",    read: true,  preview: "Invited you to collaborate on this page" },
+];
